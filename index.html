@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d13b5b3c64.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
+
+</head>
+
+<body>
+    <div id="parent">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h2 id="typing-text">Hi, I'm <span>Rmapati</span><br>Pandey From India &#x1F1EE;&#x1F1F3;</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------------about----------------------------------------------------------------------------------- -->
+
+
+    <!-- <div id="about" style="background-color: black;"> -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1><br>
+                    <p>I am a recent graduate skilled in React, HTML, CSS, and JavaScript for the frontend development,
+                        With a focus on building responsive and visually appealing websites, I am eager to apply my
+                        knowledge and collaborate with teams to create seamless user experiences. I am passionate about
+                        continuous learning and staying updated with the latest industry trends to deliver exceptional
+                        frontend solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web/App interface </li>
+                            <li><span>Javascript Development</span> <br> Designing Web/App interface </li>
+                            <li><span>python Django</span> <br> Designing Web/App backend </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span> <br> Frontend Development at Infobyte Solution </li>
+                            <li><span>2022 - 2023</span> <br>Javascript Development my own Startup "BarbHair" </li>
+                            <li><span>2022 - 2023</span> <br>python development Designing Web/App backend at my own
+                                Startup "BarbHair" </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span> <br> PSIT College Of Engineering (B.tech -IT) </li>
+                            <li><span>2017 - 2018</span> <br> Indrapratha Public School (12th Grade)</li>
+                            <li><span>2014 - 2015</span> <br> Sarvodaya Bal Vidyalaya(10th Grade) </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------Services----------------------------------------------------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services </h1><br>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I specialize in professional frontend development using HTML, CSS, JavaScript, and React. With a
+                        focus on creating responsive and user-friendly websites,
+                        I tailor each project to meet specific client needs. From custom web designs to dynamic user
+                        interfaces and CSS framework integration, I deliver visually a
+                        ppealing and seamless web experiences. With expertise in frontend development and proficiency in
+                        HTML, CSS, JavaScript, and React, I provide high-quality
+                        web development services to bring your ideas to life..</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Backend Development </h2>
+                    <p>I specialize in backend development using Python and frameworks like Django. With expertise in
+                        REST API development, I can create robust
+                        and scalable backend solutions for dynamic web applications. implementing server-side logic,
+                        I am proficient in building efficient and secure web APIs. Leveraging my knowledge of Python and
+                        Django, I can develop backend systems
+                        that effectively handle data processing, user authentication, and integration with various
+                        third-party services. My focus is on delivering
+                        reliable and high-performing backend solutions to support the functionality and performance of
+                        your web applications.</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Database Management</h2>
+                    <p>I am proficient in working with SQL and databases like MySQL or PostgreSQL. I can design and
+                        manage databases,
+                        ensuring efficient data storage and retrieval for your applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------Portfolio----------------------------------------------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media WebApp</h3>
+                        <p>This App connect you to the talented people around the world.
+                            and can share,like comment</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Todo List WebApp</h3>
+                        <p>creating a secure and scalable web application that
+                            allows multiple users to register, login, and manage their to-do lists collaboratively </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Blogging Website</h3>
+                        <p>allows multiple users to register, login, and create, edit, and publish their blog posts.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn"> See more</a>
+
+        </div>
+    </div>
+
+
+    <!----------------------------Contact----------------------------------------------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> pandeyrmapati005@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9267975616</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100007505914688"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/rmapati-pandey-514ab7184/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Rmapati-Pandey"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/pandey.rmapati04/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/Pandey1Rmapati"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="copyright">
+                <p>Copyright © 2023 Rmapati Pandey. All rights reserved. </p>
+            </div>
+    </div>
+</div>
+    <script>
+        // ------------------------Services---------------------------------------------------------------
+        var tablinks = document.getElementsByClassName("tab-links");
+        console.log(tablinks)
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        console.log(tabcontents)
+        function opentab(tabname) {
+
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            //it will add active-link class to the current target
+            event.currentTarget.classList.add("active-link");
+            //it will add active-tab class to the current target
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-250px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzKYeUZxU6dNJ79k83O1TuVcFYJKC2qnAk8no2zxp9O51p88f5yE2OYj7Syk-U5tQ_i4g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(() => {
+                    msg.innerHTML=""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        
+      </script>
+</body>
+
+</html>
